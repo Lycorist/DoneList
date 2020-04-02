@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_main.*
 
 const val EXTRA_MESSAGE: String = "com.example.myfirstapp.MESSAGE"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         getMenuInflater().inflate(R.menu.menu_main, menu)
+        toolbar.setTitle("")
         return  true
     }
 
